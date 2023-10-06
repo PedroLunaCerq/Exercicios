@@ -1,58 +1,9 @@
-#n = int(input('Digite um número:'))
-#n1 = n - 1
-#n2 = n + 1
-#print('O número que você escolheu é', n, 'Seu sucessor é', n2, 'e seu antecessor é', n1)
 
-#n = int(input('Digite um número:'))
-#n1 = n * 2
-#n2 = n * 3
-#n3 = int(n**0.5)
-#print('O número que  você escolheu é', n, 'seu dobro é', n1, 'seu triplo é', n2, 'e sua raíz quadrada é', n3)
 
-#n1 = float(input('Insira a primeira nota:'))
-#n2  = float(input('Insira a segunda nota:'))
-#n3 = (n1+n2) / 2
-#if n3 >= 6:
-#    print('Parabéns, você foi aprovado com a média \033[34m{}\033[m!'.format(n3))
-#else:
-#    print('Vish, você reprovou com a média \033[31m{}\033[m!'.format(n3))
-
-#m = float(input('Insira um valor em metro:'))
-#cm = m * 100
-#mm = cm * 100
-#print('O valor em metros que você escolheu é', m, 'cujo equivale a', cm, 'centimetros e', mm, 'milimetros')
-
-#n = int(input('Insira um número:'))
-#tabuada = n * 1, n * 2, n * 3, n * 4, n * 5, n * 6, n * 7, n * 8, n * 9, n * 10
-#print('A tabuada do número inserido é', tabuada)
-
-#saldo = float(input('Insira seu saldo:'))
-#valor_dolar = (3.27)
-#dolares = saldo / valor_dolar
-#print('O seu saldo em dólares é igual à \033[42m{:.2f}\033[m.'.format(dolares))
-
-#altura = float(input('Qual a altura da parede?'))
-#largura = float(input('E a largura?'))
-#area = largura * altura
-#tinta = area / 2
-#print('Se o tamanho da parede equivale à', area, 'a tinta necessária para pintá-la será', tinta, 'litros')
-
-#preço = float(input('Insira o preço do produto:'))
-#desconto = int(input('Insira a porcentagem do desconto'))
-#valor_descontado = (desconto / 100) * preço
-#valor_final = preço - valor_descontado
-#print('O valor de desconto de tal produto é igual à', valor_final)
-
-#salario = float(input('Insira seu salário:'))
-#aumento = int(input('Insira a porcentagem que seu salário foi aumentado:'))
-#porcentagem_aumento = (aumento / 100) * salario
-#salario_atual = salario + porcentagem_aumento
-#print('O seu aumento foi de', aumento, 'por cento! Seu novo salário agora é', salario_atual)
-
-#import math
-#num = 9
-#result = num / 2
-#print('A divisão de {} por {} é igual à {}!'.format(num, 2, result))
+import math
+num = 9
+result = num / 2
+print('A divisão de {} por {} é igual à {}!'.format(num, 2, result))
 
 #from random import randint
 #x = randint(1, 20)
