@@ -1,40 +1,13 @@
 
 
-import math
-num = 9
-result = num / 2
-print('A divisão de {} por {} é igual à {}!'.format(num, 2, result))
-
-#from random import randint
-#x = randint(1, 20)
-#print(x)
-
-#from math import floor
-#num = float(input('Digite um número:'))
-#print(floor(num))
-
-#import math
-#co = float(input('Insira o cateto oposto:'))
-#ca = float(input('Insira o cateto adjacente:'))
-#hip = co**2 + ca**2
-#hipfinal = math.sqrt(hip)
-#print('A hipotenusa do triângulo cujos numeros foram informados é igual à {}'.format(hipfinal))
-
-#import math
-#angulo = float(input('Digite um ângulo:'))
-#seno = math.sin(angulo)
-#con = math.cos(angulo)
-#tan = math.tan(angulo)
-#print('Sobre o ângulo inserido, o seno é {:.2f}, cosseno {:.2f} e tangente é {:.2f}'.format(seno, con, tan))
-
-#import random
-#aluno1 = str(input('Insira o nome do primeiro aluno:'))
-#aluno2 = str(input('Insira o nome do segundo aluno:'))
-#aluno3 = str(input('Insira o nome do terceiro aluno:'))
-#aluno4 = str(input('Insira o nome do quarto aluno:'))
-#sorteio = [aluno1, aluno2, aluno3, aluno4]
-#aluno_sorteado = random.choice(sorteio)
-#print('Entre os alunos(as) {}, o(a) escolhido(a) para apagar o quadro foi... {}!'.format(sorteio, aluno_sorteado))
+import random
+aluno1 = str(input('Insira o nome do primeiro aluno:'))
+aluno2 = str(input('Insira o nome do segundo aluno:'))
+aluno3 = str(input('Insira o nome do terceiro aluno:'))
+aluno4 = str(input('Insira o nome do quarto aluno:'))
+sorteio = [aluno1, aluno2, aluno3, aluno4]
+aluno_sorteado = random.choice(sorteio)
+print('Entre os alunos(as) {}, o(a) escolhido(a) para apagar o quadro foi... {}!'.format(sorteio, aluno_sorteado))
 
 #import random
 #a1 = str(input('Insira o nome do primeiro integrante:'))
