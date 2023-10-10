@@ -1,0 +1,1 @@
+#Crie um programa com uma tupla com várias palavras. Depois disso, deve mostrar para cada palavra, as suas vogais.
