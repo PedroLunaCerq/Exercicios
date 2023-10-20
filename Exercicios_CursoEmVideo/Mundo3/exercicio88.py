@@ -11,4 +11,5 @@ for i in range(quantidade):
     jogo = []
 
 print('Você pode fazer os seguintes jogos:')
-print(jogos)
+for c in jogos:
+    print(c)
