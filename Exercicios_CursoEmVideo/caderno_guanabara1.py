@@ -1,39 +1,7 @@
 
 
-import random
-aluno1 = str(input('Insira o nome do primeiro aluno:'))
-aluno2 = str(input('Insira o nome do segundo aluno:'))
-aluno3 = str(input('Insira o nome do terceiro aluno:'))
-aluno4 = str(input('Insira o nome do quarto aluno:'))
-sorteio = [aluno1, aluno2, aluno3, aluno4]
-aluno_sorteado = random.choice(sorteio)
-print('Entre os alunos(as) {}, o(a) escolhido(a) para apagar o quadro foi... {}!'.format(sorteio, aluno_sorteado))
-
-#import random
-#a1 = str(input('Insira o nome do primeiro integrante:'))
-#a2 = str(input('Insira o nome do segundo integrante:'))
-#a3 = str(input('Insira o nome do terceiro integrante:'))
-#a4 = str(input('Insira o nome do quarto integrante:'))
-#grupo = [a1, a2, a3, a4]
-#random.shuffle(grupo)
-#print('A ordem de apresentação será: ', grupo)
-
-#nome = (input('Insira seu nome:'))
-#nome1 = nome.replace(' ', '')
-#print(nome.upper())
-#print(nome.lower())
-#print(len(nome1))
-#print(len(nome.split()[0]))
-
-#n = str(input('Digite um número:'))
-#n1 = n[0]
-#n2 = n[1]
-#n3 = n[2]
-#n4 = n[3]
-#print('A milha é {}, centena {}, dezena {} e unidade {}'.format(n1, n2, n3, n4))
-
-#nome = (input('Digite o nome de sua cidade:')).strip()
-#print(nome[:5].upper() == 'SANTO')
+nome = (input('Digite o nome de sua cidade:')).strip()
+print(nome[:5].upper() == 'SANTO')
 
 #nome = str(input('Digite o seu nome:')).strip()
 #print('Seu nome tem Silva? {}'.format('SILVA' in nome.upper()))
