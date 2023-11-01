@@ -1,33 +1,40 @@
-#Variáveis.
-operar = 'S'
-pessoas = []
+galera = []
 pessoa = {}
+soma = media = 0
 
-#Cadastrar pessoas.
-while operar != 'N':
-    pessoa['nome'] = input('Insira o nome: ')
-    pessoa['genero'] = input('Insira o gênero [M/F]: ')
-    pessoa['idade'] = int(input('Insira a idade: '))
-    pessoas.append(pessoa.copy())
-    pessoa = {}
-    operar = input('Deseja continuar? [S/N] ').upper
+print('-' * 15)
+while True:
+    pessoa.clear()
+    pessoa['nome'] = input('Nome: ')
+    while True:
+        pessoa['genero'] = input('Insira o gênero: [M/F] ').upper()[0]
+        if pessoa['genero'] in 'MF':
+            break
+        print('Erro! Por favor, [M/F]!')    
+    pessoa['idade'] = int(input('Idade: '))
+    soma += pessoa['idade']
+    galera.append(pessoa.copy())
+    while True:
+        resp = input('Quer continuar? [S/N] ').upper()[0]
+        if resp in 'SN':
+            break
+        print('Erro! Por favor, [S/N]')
+    if resp == 'N':
+        break
 
-#Total de pessoas
-total = 0
-for pessoa in pessoas:
-    total += 1
-
-#Idade média das pessoas.
-idade_total = 0
-for c, pessoa in enumerate(pessoas):
-    idade_total += pessoa['idade']
-media = idade_total / c
-
-#Uma lista com todas as mulheres e pessoas com idade acima da média.
-lista_fem = []
-lista_idade = []
-for pessoa in pessoas:
-    if pessoa['genero'] == 'F':
-        lista_fem.append(pessoa['nome'])
-    if pessoa['idade'] > media:
-        lista_idade.append(pessoa['nome'])
+media = soma / len(galera)
+print('-' * 15)
+print(f'A) O total de pessoas cadastradas é {len(galera)}!')
+print(f'B) A média de idade das pessoas cadastradas é {media:5.2f}!')
+print('C) As mulheres cadastradas foram ', end='')
+for p in galera:
+    if p['genero'] in 'Ff':
+        print(f"{p['nome']}, ", end='')
+print('D) Lista das pessoas de idade acima da média: ', end='')
+print()
+for p in galera:
+    if p['idade'] >= media:
+        print(f"{p['nome']},", end='')
+print()
+print('=' * 15)
+print('<<Encerrado!>>')
