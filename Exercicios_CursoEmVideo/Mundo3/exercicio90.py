@@ -1,5 +1,6 @@
 alunos = []
 aluno = {}
+a = '-'
 
 while True:
     aluno['nome'] = input('Insira o nome do estudante: ').title()
@@ -13,5 +14,9 @@ while True:
     if operar == 'N':
         break
 
+print(f'{a}' * 15)
 for aluno in alunos:
     print(f"Estudante: {aluno['nome']}, Situação: {aluno['situacao']}")
+print(f"""{a * 15}
+<< Programa encerrado! >>
+""")
